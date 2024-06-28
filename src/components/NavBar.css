@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #22adde;
+    height: 9vh;
+}
+
+.navbar img {
+    background-color: white;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.nav-box{
+    display: flex;
+
+    width: max-content;
+
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 12vw;
+}
+
+.navbar-links a {
+    font-family: Arial;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: larger;
+}
+.navbar-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar-links .currentPage{
+    font-weight: bolder;
+   text-decoration: underline;
+}
+.adminLink{
+    opacity: 50%;
+}
+.adminLink:hover{
+    text-decoration: none;
+    color: crimson;
+
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        height: 9vh;
+            }
+img{
+    width: 27vw;
+    margin-right:0;
+}
+.nav-box{
+    padding: 0;
+    margin-left: 0;
+}
+    .navbar-links {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+        grid-template-rows: auto auto; /* Две строки автоматической высоты */
+        gap: 0.2rem; /* Промежуток между элементами */
+
+    }
+
+
+
+    .navbar-links a {
+        font-size: 13px;/* Меньший шрифт для мобильных устройств */
+    }
+}
