@@ -1,0 +1,118 @@
+.registration-page {
+    background-image: url('client/public/background-register.jpg');
+    background-size: cover;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+}
+
+.registration-container {
+    margin: auto; /* Center the container within the page */
+    max-width: 70vw;
+    width: 100%;
+    padding: 50px;
+    background: #e8f4ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Ensure the contents are stacked vertically */
+    align-items: center; /* Center the contents horizontally */
+}
+
+.registration-container h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 50px; /* Add some space below the heading */
+}
+
+.registration-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
+    flex-basis: 48%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000056;
+    font-weight: bolder;
+}
+
+.form-group input,
+.form-group select {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #010173;
+    border-radius: 25px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px; /* Add some space above the buttons */
+
+}
+
+.form-buttons button {
+    flex-basis: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.form-buttons button[type="button"] {
+    background: #6c757d;
+
+}
+.form-buttons button[type="button"]:hover {
+    background: red;
+
+}
+
+.form-buttons button[type="submit"] {
+    background: #007BFF;
+
+}
+.form-buttons button[type="submit"]:hover {
+    background: #35a404;
+}
+label{
+    color: #003366;
+    margin-left: 10px;
+}
+@media (max-width: 768px) {
+    .registration-page{
+        padding: 32px;
+        height: auto;
+    }
+    .form-group {
+        flex-basis: 100%; /* Make form groups full-width on smaller screens */
+    }
+
+    .form-buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+
+    .form-buttons button {
+        flex-basis: 100%;
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+
+    .form-buttons button:last-child {
+        margin-bottom: 0; /* Remove bottom margin from the last button */
+    }
+}
