@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('client/public/background-auth.jpg');
+    background-image: url('background-auth.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
