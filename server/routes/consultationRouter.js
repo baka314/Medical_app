@@ -1,6 +1,6 @@
 const Router = require('express')
 const router = new Router()
-const manipulationController = require('../controllers/manipulationController')
+const consultationController = require('../controllers/consultationController')
 
 router.post('/',)
 router.get('/',)

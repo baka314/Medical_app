@@ -5,7 +5,7 @@ const models = require('./models/models')
 const cors = require('cors')
 
 const router = require('./routes/index')
-const errorHandler = require('./middleware/ErrorHandlingMiddleware')
+const errorHandler = require('./middleWare/ErrorHandlingMiddleware')
 const path = require('path')
 
 const PORT = process.env.PORT || 5000
