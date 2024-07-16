@@ -1,16 +1,14 @@
+// src/App.js
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+import AppRouter from './components/AppRouter';
+
 function App() {
-  return (
-      <div className="App">
-        <NavBar />
-        <MainContent />
-          <Footer/>
-      </div>
-  );
+    return (
+        <div className="App">
+            <AppRouter />
+        </div>
+    );
 }
 
 export default App;

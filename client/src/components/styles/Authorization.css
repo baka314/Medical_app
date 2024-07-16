@@ -1,0 +1,75 @@
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background-auth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.auth-container h2{
+    font-family: Arial, serif;
+    text-decoration: underline;
+    font-size: 22px;
+    color: navy;
+
+}
+.auth-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.auth-form .form-group {
+    margin-bottom: 15px;
+}
+
+.auth-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    justify-self: center;
+}
+
+.auth-form .form-group input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    border: 2px solid #010173;
+    border-radius: 10px;
+}
+
+.auth-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-form .form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.auth-form .form-buttons button[type="button"] {
+    background: #6c757d;
+
+}
+.auth-form .form-buttons button[type="button"]:hover {
+    background: red;
+}
+
+.auth-form .form-buttons button[type="submit"]:hover {
+    background-color: #28a745;
+
+}
+.auth-form .form-buttons button[type="submit"] {
+ background: #007BFF;;
+}
